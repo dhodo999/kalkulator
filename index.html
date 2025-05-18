@@ -15,13 +15,13 @@
            <div class="button">7</div>
            <div class="button">8</div>
            <div class="button">9</div>
-           <div class="button negative">+/-</div>
+           <div class="button operator">×</div>
        </div>
        <div class="flex-container-row">
            <div class="button">4</div>
            <div class="button">5</div>
            <div class="button">6</div>
-           <div class="button operator">-</div>
+           <div class="button operator">÷</div>
        </div>
        <div class="flex-container-row">
            <div class="button">1</div>
@@ -32,11 +32,30 @@
        <div class="flex-container-row">
            <div class="button clear">CE</div>
            <div class="button">0</div>
-           <div class="button equals double">=</div>
+           <div class="button decimal">.</div>
+           <div class="button operator">-</div>
+       </div>
+       <div class="flex-container-row">
+           <div class="button negative">+/-</div>
+           <div class="button equals full">=</div>
        </div>
    </div>
    
-   <script src="assets/kalkulator.js"></script>
+   <div class="history card">
+       <h2>Riwayat Kalkulasi</h2>
+       <table>
+           <thead>
+               <tr>
+                   <th>Angka Pertama</th>
+                   <th>Operator</th>
+                   <th>Angka Kedua</th>
+                   <th>Hasil</th>
+               </tr>
+           </thead>
+           <tbody id="historyList"></tbody>
+       </table>
+   </div>
+   
+   <script src="assets/script.js"></script>
 </body>
 </html>
-
